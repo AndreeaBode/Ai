@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from werkzeug.urls import quote
 import joblib
 
 app = Flask(__name__)
@@ -19,6 +20,7 @@ def predict():
     except Exception as e:
         # În cazul unei erori, returnează mesajul de eroare
         return jsonify({'error': str(e)}), 400
+
 
 if __name__ == '__main__':
     # Rulează aplicația Flask în modul de dezvoltare
