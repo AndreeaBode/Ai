@@ -1,0 +1,3 @@
+flask
+scikit-learn==1.2.2  # sau 1.5.0, în funcție de compatibilitatea modelului tău
+joblib
